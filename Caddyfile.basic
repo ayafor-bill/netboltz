@@ -1,0 +1,9 @@
+# NetBoltZ Caddyfile - Basic HTTP Proxy
+# Use for: Initial local testing (no QUIC)
+# Run: caddy run --config Caddyfile.basic
+
+:8080 {
+    reverse_proxy https://www.youtube.com {
+        header_up Host {upstream_hostport}
+    }
+}
