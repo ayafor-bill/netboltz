@@ -217,27 +217,24 @@ wireshark quic_capture.pcap
 ---
 
 ## 📁 Repository Structure
-
 ```
 netboltz/
-├── README.md                    # This file
+├── README.md                    # Main documentation
 ├── LICENSE                      # MIT License
 ├── Caddyfile.basic              # Basic HTTP proxy
 ├── Caddyfile.local-quic         # Local QUIC testing
 ├── Caddyfile.production         # Production deployment
 ├── scripts/
-│   ├── test_speed.sh            # Speed benchmarking script
-│   ├── change_target.sh         # Dynamic target switching
-│   └── setup_server.sh          # Automated server setup
+│   ├── test_speed.sh            # Speed benchmark tool
+│   ├── setup_server.sh          # Automated server setup
+│   └── change_target.sh         # Dynamic target switching
 ├── docs/
-│   ├── SETUP_GUIDE.md           # Detailed setup instructions
-│   ├── CADDYFILE_EXAMPLES.md    # Configuration examples
-│   ├── TROUBLESHOOTING.md       # Common issues and fixes
-│   └── RESULTS.md               # Full test results and analysis
-└── results/
-    └── test_data.md             # Raw test data and calculations
+│   ├── SETUP_GUIDE.md           # Complete setup instructions
+│   └── TROUBLESHOOTING.md       # Common issues and fixes
+├── results/
+│   └── test_data.md             # Raw test data and analysis
+└── images/
 ```
-
 ---
 
 ## ⚙️ Configuration Examples
