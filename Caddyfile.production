@@ -1,0 +1,20 @@
+# NetBoltZ Caddyfile - Production Deployment
+# Use for: Cloud server with real domain
+# Requirements:
+#   - Valid domain pointing to your server
+#   - Ports 80, 443 (TCP + UDP) open
+#   - Caddy installed on Ubuntu server
+#
+# Caddy automatically handles:
+#   - Let's Encrypt SSL certificate
+#   - HTTP -> HTTPS redirect
+#   - HTTP/3 (QUIC) enablement
+#   - Certificate renewal
+#
+# Replace YOUR_DOMAIN.com with your actual domain
+
+YOUR_DOMAIN.com {
+    reverse_proxy https://www.youtube.com {
+        header_up Host {upstream_hostport}
+    }
+}

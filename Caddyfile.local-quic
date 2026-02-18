@@ -1,0 +1,17 @@
+# NetBoltZ Caddyfile - Local QUIC/HTTP3 Testing
+# Use for: Testing QUIC locally with self-signed certificate
+# Run: caddy run --config Caddyfile.local-quic
+# Test: curl --http3 -k https://localhost:8443
+# Note: Browser will show certificate warning - click "Accept Risk"
+
+{
+    auto_https off
+    admin 0.0.0.0:2019
+}
+
+:8443 {
+    tls internal
+    reverse_proxy https://www.youtube.com {
+        header_up Host {upstream_hostport}
+    }
+}
