@@ -361,7 +361,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 Network Engineer & Security Researcher | Building infrastructure for emerging markets
 
 - 🌍 Buea, Cameroon
-- 💼 [LinkedIn](https://linkedin.com/in/bill-adib-0932a9245)
+- 💼 [LinkedIn](https://www.linkedin.com/in/bill-adib-afesi-0932a9245)
 - 🐙 [GitHub](https://github.com/ayafor-bill)
 - 📧 billadib0@gmail.com
 
